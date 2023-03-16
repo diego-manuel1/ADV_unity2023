@@ -11,10 +11,15 @@ public class BolaBolo : MonoBehaviour
     public Color32 colorPink;
     public Color32 colorYellow;*/
     public PlayableDirector limpiador;
+    public PlayableDirector dispensador;
+    public Rigidbody bolaRb;
+    public float fuerza = 1;
+    private bool moveEnable = false;
 
     private void Awake()
     {
         limpiador.stopped += Restart;
+        dispensador.stopped += MovementEnable;
     }
     void Start()
     {
@@ -28,11 +33,20 @@ public class BolaBolo : MonoBehaviour
         {
             limpiador.Play();
         }
+        if (Input.GetKeyDown(KeyCode.Space) && moveEnable)
+        {
+            bolaRb.AddForce((new Vector3(0,0,1))*fuerza, ForceMode.Impulse);
+        }
     }
 
     private void Restart(PlayableDirector p)
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void MovementEnable(PlayableDirector p)
+    {
+        moveEnable = true;
     }
 
     private void OnTriggerEnter(Collider other)

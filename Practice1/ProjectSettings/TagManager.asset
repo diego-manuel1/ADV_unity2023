@@ -8,6 +8,7 @@ TagManager:
   - TriggerPink
   - TriggerYellow
   - Ground
+  - Ball
   layers:
   - Default
   - TransparentFX
