@@ -357,6 +357,8 @@ PlayableDirector:
     value: {fileID: 1537255596}
   - key: {fileID: -4574946972052247705, guid: b6641bfb0b4dc1a49b329cbd40b9454d, type: 2}
     value: {fileID: 1537255595}
+  - key: {fileID: 4547329242312512380, guid: b6641bfb0b4dc1a49b329cbd40b9454d, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &233336509
@@ -1513,7 +1515,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534038002}
-  m_LocalRotation: {x: 0.10408035, y: 0.023672493, z: -0.0024780056, w: 0.99428403}
+  m_LocalRotation: {x: 0.10408035, y: 0.023672484, z: -0.0024780047, w: 0.99428403}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1600,7 +1602,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567392136}
-  m_LocalRotation: {x: 0.10408035, y: 0.023672497, z: -0.002478006, w: 0.99428403}
+  m_LocalRotation: {x: 0.10408035, y: 0.023672478, z: -0.002478004, w: 0.99428403}
   m_LocalPosition: {x: 4.194459, y: 2.19, z: 0.1867981}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1950,7 +1952,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 37f4578f4f103314095381584a7addd4, type: 2}
+  - {fileID: 2100000, guid: 85201b94725aeba42807629a0c0552a3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1974,8 +1976,8 @@ ParticleSystemRenderer:
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
-  m_MinParticleSize: 0
-  m_MaxParticleSize: 5
+  m_MinParticleSize: 0.01
+  m_MaxParticleSize: 0.05
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -2191,7 +2193,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0.9339623, g: 0.8266908, b: 0.5233713, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -2569,7 +2571,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 10000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -2635,9 +2637,9 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: -0.0000000032416665, y: 0, z: 0.000000053446286}
-    m_Rotation: {x: 270, y: 270, z: 0}
-    m_Scale: {x: 10.028902, y: 9.72917, z: 1.5000559}
+    m_Position: {x: -0.0000000032416665, y: -0.5220623, z: -0.016516663}
+    m_Rotation: {x: 270.6049, y: 0, z: 0}
+    m_Scale: {x: 9.942838, y: 9.838349, z: 0.99999964}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -2716,7 +2718,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 0.0001
       mode: 0
       spread: 0
       speed:
@@ -3442,8 +3444,8 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     speedRange: {x: 0, y: 1}
-    tilesX: 1
-    tilesY: 1
+    tilesX: 8
+    tilesY: 8
     animationType: 0
     rowIndex: 0
     cycles: 1
@@ -10426,7 +10428,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599550557}
-  m_LocalRotation: {x: 0.12214865, y: 0.023623504, z: -0.002908186, w: 0.99222636}
+  m_LocalRotation: {x: 0.12214865, y: 0.023623494, z: -0.002908185, w: 0.99222636}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
