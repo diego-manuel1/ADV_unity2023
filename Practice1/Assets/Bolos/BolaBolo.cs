@@ -14,7 +14,7 @@ public class BolaBolo : MonoBehaviour
     public PlayableDirector dispensador;
     public Rigidbody bolaRb;
     public float fuerza = 1;
-    private bool moveEnable = false;
+    public bool moveEnable = false;
     public List<Rigidbody> bolos;
     private Material material;
     public GameObject inicioCamera;
@@ -32,14 +32,21 @@ public class BolaBolo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R)) //Inicia la animación del limpiador y reinicia la escena
+        if (Input.GetKeyDown(KeyCode.R) && moveEnable) //Inicia la animación del limpiador y reinicia la escena
         {
-            limpiador.Play();
+            IniciarLimpieza();
         }
         if (Input.GetKeyDown(KeyCode.Space) && moveEnable)
         {
             bolaRb.AddForce((new Vector3(0,0,1))*fuerza, ForceMode.Impulse);
         }
+    }
+
+    public void IniciarLimpieza()
+    {
+        this.gameObject.GetComponent<AudioSource>().Stop();
+        moveEnable = false;
+        limpiador.Play();
     }
 
     private void Restart(PlayableDirector p)
@@ -50,6 +57,7 @@ public class BolaBolo : MonoBehaviour
     private void MovementEnable(PlayableDirector p)
     {
         moveEnable = true;
+        this.gameObject.GetComponent<AudioSource>().Play();
         material.SetColor("_EmissionColor", colorGreen);
         foreach(Rigidbody rb in bolos)
         {
