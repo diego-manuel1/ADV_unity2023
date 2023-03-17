@@ -6,16 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class BolaBolo : MonoBehaviour
 {
-    private Material material;
     /*public Color32 colorBlue;
     public Color32 colorPink;
     public Color32 colorYellow;*/
+    public Color32 colorGreen;
     public PlayableDirector limpiador;
     public PlayableDirector dispensador;
     public Rigidbody bolaRb;
     public float fuerza = 1;
     private bool moveEnable = false;
-
+    public List<Rigidbody> bolos;
+    private Material material;
+    public GameObject inicioCamera;
+    public GameObject ballCamera;
     private void Awake()
     {
         limpiador.stopped += Restart;
@@ -47,6 +50,13 @@ public class BolaBolo : MonoBehaviour
     private void MovementEnable(PlayableDirector p)
     {
         moveEnable = true;
+        material.SetColor("_EmissionColor", colorGreen);
+        foreach(Rigidbody rb in bolos)
+        {
+            rb.isKinematic = false;
+        }
+        inicioCamera.SetActive(false);
+        ballCamera.SetActive(true);
     }
 
     private void OnTriggerEnter(Collider other)
