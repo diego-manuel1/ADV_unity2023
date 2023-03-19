@@ -6,9 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class BolaBolo : MonoBehaviour
 {
-    /*public Color32 colorBlue;
-    public Color32 colorPink;
-    public Color32 colorYellow;*/
     public Color32 colorGreen;
     public PlayableDirector limpiador;
     public PlayableDirector dispensador;
@@ -19,6 +16,8 @@ public class BolaBolo : MonoBehaviour
     private Material material;
     public GameObject inicioCamera;
     public GameObject ballCamera;
+    public AudioSource musicManager;
+    private bool chocado;
     private void Awake()
     {
         limpiador.stopped += Restart;
@@ -27,6 +26,7 @@ public class BolaBolo : MonoBehaviour
     void Start()
     {
         material= GetComponent<MeshRenderer>().material;
+        chocado = false;
     }
 
     // Update is called once per frame
@@ -44,7 +44,8 @@ public class BolaBolo : MonoBehaviour
 
     public void IniciarLimpieza()
     {
-        this.gameObject.GetComponent<AudioSource>().Stop();
+        //this.gameObject.GetComponent<AudioSource>().Stop();
+        musicManager.Stop();
         moveEnable = false;
         limpiador.Play();
     }
@@ -57,7 +58,7 @@ public class BolaBolo : MonoBehaviour
     private void MovementEnable(PlayableDirector p)
     {
         moveEnable = true;
-        this.gameObject.GetComponent<AudioSource>().Play();
+        musicManager.Play();
         material.SetColor("_EmissionColor", colorGreen);
         foreach(Rigidbody rb in bolos)
         {
@@ -67,19 +68,12 @@ public class BolaBolo : MonoBehaviour
         ballCamera.SetActive(true);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        /*if (other.tag == "TriggerBlue")
+        if(collision.gameObject.tag == "Bolo" && !chocado)
         {
-            material.SetColor("_EmissionColor", colorBlue);
+            this.gameObject.GetComponent<AudioSource>().Play();
+            chocado= true;
         }
-        else if (other.tag == "TriggerPink")
-        {
-            material.SetColor("_EmissionColor", colorPink);
-        }
-        else if (other.tag == "TriggerYellow")
-        {
-            material.SetColor("_EmissionColor", colorYellow);
-        }*/
     }
 }

@@ -359,6 +359,28 @@ PlayableDirector:
     value: {fileID: 1537255595}
   - key: {fileID: 4547329242312512380, guid: b6641bfb0b4dc1a49b329cbd40b9454d, type: 2}
     value: {fileID: 0}
+  - key: {fileID: -4716174367785775873, guid: b6641bfb0b4dc1a49b329cbd40b9454d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -6933142887782774570, guid: b6641bfb0b4dc1a49b329cbd40b9454d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 568976432747021646, guid: b6641bfb0b4dc1a49b329cbd40b9454d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 3487957092373171047, guid: b6641bfb0b4dc1a49b329cbd40b9454d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 991368318299390989, guid: b6641bfb0b4dc1a49b329cbd40b9454d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -6761217725745063461, guid: b6641bfb0b4dc1a49b329cbd40b9454d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -5587007099856811585, guid: b6641bfb0b4dc1a49b329cbd40b9454d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 4225277448037569490, guid: b6641bfb0b4dc1a49b329cbd40b9454d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 2161801998512549717, guid: b6641bfb0b4dc1a49b329cbd40b9454d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -6841035771921768587, guid: b6641bfb0b4dc1a49b329cbd40b9454d, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 5154610022848800189, guid: b6641bfb0b4dc1a49b329cbd40b9454d, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &233336509
@@ -753,7 +775,7 @@ GameObject:
   - component: {fileID: 343229283}
   m_Layer: 0
   m_Name: bolo (21)
-  m_TagString: Untagged
+  m_TagString: Bolo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6726,7 +6748,7 @@ GameObject:
   - component: {fileID: 645213503}
   m_Layer: 0
   m_Name: bolo (17)
-  m_TagString: Untagged
+  m_TagString: Bolo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7371,7 +7393,7 @@ GameObject:
   - component: {fileID: 816826478}
   m_Layer: 0
   m_Name: bolo (13)
-  m_TagString: Untagged
+  m_TagString: Bolo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7507,7 +7529,7 @@ GameObject:
   - component: {fileID: 865793364}
   m_Layer: 0
   m_Name: bolo (16)
-  m_TagString: Untagged
+  m_TagString: Bolo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8304,7 +8326,7 @@ GameObject:
   - component: {fileID: 1060900458}
   m_Layer: 0
   m_Name: bolo (14)
-  m_TagString: Untagged
+  m_TagString: Bolo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8424,6 +8446,134 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1076076000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1076076002}
+  - component: {fileID: 1076076001}
+  m_Layer: 0
+  m_Name: MusicGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1076076001
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076076000}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 38314a02f8ea2b742bdcf1617324f2a1, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1076076002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076076000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.807514, y: -8.935593, z: 30.499083}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1105451208
 GameObject:
   m_ObjectHideFlags: 0
@@ -8439,7 +8589,7 @@ GameObject:
   - component: {fileID: 1105451213}
   - component: {fileID: 1105451214}
   - component: {fileID: 1105451215}
-  - component: {fileID: 1105451216}
+  - component: {fileID: 1105451217}
   m_Layer: 0
   m_Name: Bola
   m_TagString: Ball
@@ -8583,7 +8733,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 5
+  m_Time: 2
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -8600,7 +8750,7 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.5013428
+        time: 0.23545074
         value: 0
         inSlope: 0
         outSlope: 0
@@ -8613,7 +8763,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.01886791, g: 0.017693115, b: 0.017693115, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -8683,7 +8833,8 @@ MonoBehaviour:
   - {fileID: 343229285}
   inicioCamera: {fileID: 1537255595}
   ballCamera: {fileID: 567392136}
---- !u!82 &1105451216
+  musicManager: {fileID: 1076076001}
+--- !u!82 &1105451217
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8693,11 +8844,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 38314a02f8ea2b742bdcf1617324f2a1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1d326722bb275de4fb22e8ec05d166dc, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -8795,7 +8946,7 @@ GameObject:
   - component: {fileID: 1116762349}
   m_Layer: 0
   m_Name: bolo (11)
-  m_TagString: Untagged
+  m_TagString: Bolo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9499,7 +9650,7 @@ GameObject:
   - component: {fileID: 1398985790}
   m_Layer: 0
   m_Name: bolo (19)
-  m_TagString: Untagged
+  m_TagString: Bolo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9733,7 +9884,7 @@ GameObject:
   - component: {fileID: 1417380679}
   m_Layer: 0
   m_Name: bolo (12)
-  m_TagString: Untagged
+  m_TagString: Bolo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10428,7 +10579,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599550557}
-  m_LocalRotation: {x: 0.12214865, y: 0.023623504, z: -0.002908186, w: 0.99222636}
+  m_LocalRotation: {x: 0.12214865, y: 0.023623494, z: -0.002908185, w: 0.99222636}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10912,7 +11063,7 @@ GameObject:
   - component: {fileID: 1703808646}
   m_Layer: 0
   m_Name: bolo (20)
-  m_TagString: Untagged
+  m_TagString: Bolo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11518,6 +11669,8 @@ PlayableDirector:
     value: {fileID: 567392136}
   - key: {fileID: -6840572255588291824, guid: 939bdda3b03d5b34ab8cfa6beecc0d57, type: 2}
     value: {fileID: 1537255595}
+  - key: {fileID: -5610656239997275002, guid: 939bdda3b03d5b34ab8cfa6beecc0d57, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1849420147
@@ -11715,7 +11868,7 @@ GameObject:
   - component: {fileID: 1989938210}
   m_Layer: 0
   m_Name: bolo (15)
-  m_TagString: Untagged
+  m_TagString: Bolo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11922,7 +12075,7 @@ GameObject:
   - component: {fileID: 2034632175}
   m_Layer: 0
   m_Name: bolo (18)
-  m_TagString: Untagged
+  m_TagString: Bolo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
